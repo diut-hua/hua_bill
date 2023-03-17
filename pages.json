@@ -1,17 +1,75 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
+		    "path" : "pages/me/me",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "华のbill",
+		        "enablePullDownRefresh": false
+		    }
 		}
-	],
+	    ,{
+            "path" : "pages/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "华のbill",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "华のbill",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/statistics/statistics",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "华のbill",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTitleText": "华のbill",
+		"navigationBarBackgroundColor": "#ffa800",
+		"backgroundColor": "#FFFFFF"
 	},
-	"uniIdRouter": {}
+	"tabBar": {
+		"selectedColor":"#ffa800",
+		"color":"#2c2c2c",		//未被选中时颜色
+		"list":[
+			{
+				"text":"明细",
+				"pagePath":"pages/detail/detail",
+				"iconPath":"static/img/detail.png",
+				"selectedIconPath":"static/img/detail-a.png"
+			},
+			{
+				"text":"记账",
+				"pagePath":"pages/index/index",
+				"iconPath":"static/img/keep.png",
+				"selectedIconPath":"static/img/keep-a.png"
+			},
+			{
+				"text":"统计",
+				"pagePath":"pages/statistics/statistics",
+				"iconPath":"static/img/statistics.png",
+				"selectedIconPath":"static/img/statistics-a.png"
+			},
+			{
+				"text":"我的",
+				"pagePath":"pages/me/me",
+				"iconPath":"static/img/me.png",
+				"selectedIconPath":"static/img/me-a.png"
+			}
+		]
+	}
 }

@@ -1,6 +1,6 @@
 <template>
 	<view>
-		index
+		me
 	</view>
 </template>
 
